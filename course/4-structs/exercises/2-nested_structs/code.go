@@ -16,7 +16,23 @@ type user struct {
 }
 
 func canSendMessage(mToSend messageToSend) bool {
-	// ?
+	if mToSend.sender.name == "" {
+		fmt.Println("Missing sender name")
+		return false
+	}
+	if mToSend.recipient.name == "" {
+		fmt.Println("Missing recipient name")
+		return false
+	}
+	if mToSend.sender.number == 0 {
+		fmt.Println("Missing sender number")
+		return false
+	}
+	if mToSend.recipient.number == 0 {
+		fmt.Println("Missing recipient number")
+		return false
+	}
+	fmt.Println("AOK!!!")
 	return true
 }
 

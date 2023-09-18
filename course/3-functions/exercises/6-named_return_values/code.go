@@ -4,8 +4,14 @@ import (
 	"fmt"
 )
 
+<<<<<<< HEAD
 func yearsUntilEvents(age int) (int, int, int) {
 	yearsUntilAdult := 18 - age
+=======
+func yearsUntilEvents(age int) (yearsUntilAdult, yearsUntilDrinking, yearsUntilCarRental int) {
+
+	yearsUntilAdult = 18 - age
+>>>>>>> 1787da98cd48082a1dc32b1ffa5bc1823d587163
 	if yearsUntilAdult < 0 {
 		yearsUntilAdult = 0
 	}
